@@ -13,7 +13,7 @@ services:
       - "4000:4000"
     volumes:
       - .:/code
-    image: user/hw3
+    image: hw3
     container_name: hw3
 
   postgres:
