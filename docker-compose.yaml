@@ -13,8 +13,8 @@ services:
       - "4000:4000"
     volumes:
       - .:/code
-    image: hw3
-    container_name: alexrey1999/hw3
+    image: alexrey1999/hw3
+    container_name: hw3
 
   postgres:
     image: postgres:11-alpine
