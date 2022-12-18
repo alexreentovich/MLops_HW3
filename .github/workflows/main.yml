@@ -26,5 +26,5 @@ jobs:
         run: docker-compose run app pytest .
       -
         name: Push
-        run: docker-compose bundle --push-images
+        run: docker-compose --push-images
 
