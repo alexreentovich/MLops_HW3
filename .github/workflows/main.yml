@@ -26,9 +26,9 @@ jobs:
         run: docker-compose run app pytest .
       -
         name: Push
-        uses: docker/build-push-action@v3
+        uses: docker/push-action@v3
         with:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/clockbox:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/hw3:latest
