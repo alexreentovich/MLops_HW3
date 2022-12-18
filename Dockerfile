@@ -12,7 +12,7 @@ COPY ./database.py .
 
 COPY ./RegressionObject.py .
 
-COPY ./conftest.py .
+#COPY ./conftest.py .
 
 COPY ./test_RegressionObject.py .
 
