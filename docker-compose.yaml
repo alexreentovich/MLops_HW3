@@ -14,7 +14,7 @@ services:
     volumes:
       - .:/code
     image: hw3
-    container_name: hw3
+    container_name: alexrey1999/hw3
 
   postgres:
     image: postgres:11-alpine
