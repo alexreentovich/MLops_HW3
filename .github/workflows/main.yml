@@ -25,13 +25,6 @@ jobs:
         name: Compose, test
         run: docker-compose run app pytest .
       -
-        name: Compose down
-        run: docker-compose down --remove-orphans
-      -
         name: Push
-        uses: docker/build-push-action@v3
-        with:
-          context: .
-          file: ./Dockerfile
-          push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/hw3:latest
+        run: docker-compose bundle --push-images
+
